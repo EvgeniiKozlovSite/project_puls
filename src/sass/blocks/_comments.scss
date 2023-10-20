@@ -1,0 +1,34 @@
+.comments{
+    padding-bottom: 50px;
+    &__comment{
+        margin-top: 50px;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        img{
+            margin-right: 60px;
+            max-width: 169px;
+        }
+        
+    }
+    &__text{
+        &_name{
+            color: $tc_bl;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+        &_dest{
+            color: #646464;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &_descr{
+            margin-top: 10px;
+            color: $tc_bl;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+        }
+    }
+}
