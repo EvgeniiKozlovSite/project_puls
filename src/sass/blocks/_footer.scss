@@ -43,6 +43,9 @@
             border-radius: 100%;
             width: 52px;
             height: 52px;
+            &:hover{
+                border: none;
+            }
         }
     }
 }
