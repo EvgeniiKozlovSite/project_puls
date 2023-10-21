@@ -74,4 +74,39 @@ $('.button_mini').each(function(i) {
   })
 });
 
+
+
+function valodForm(form){
+  $(form).validate({
+    rules: {
+      name: "required",
+      phone: {
+        required: true,
+        minlength: 10
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+      messages: {
+        name: "Введите Ваше имя",
+        email: {
+          required: "Введите свою почту",
+          email: "Введите правильно адрес, например: name@domain.com"
+        },
+        phone: {
+          required: "Заполните правильно номер телефона",
+          minlength: "Минимальное количество знаков - 11"
+      }
+    }
+  
+  })
+};
+valodForm('#order form');
+valodForm('#consultation-form');
+valodForm('#consultation form');
+
+$('input[name=phone]').inputmask('+7(999)-999-99-99');
+
 });
