@@ -14,7 +14,8 @@
         display: flex;
         justify-content: space-between;
         width: 749px;
-        border: 1px solid $tc_bl;
+        height: 50px;
+        /* border: 1px solid $tc_bl; */
     }
     &__desc{
         display: flex;
@@ -47,5 +48,20 @@
         margin-bottom: 20px;
 
       
+    }
+    &__icon{
+        &_animated{
+            animation-name: heartbeat;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+
+        }
+        &_shoe{
+            animation-name: shoerun;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
     }
 }

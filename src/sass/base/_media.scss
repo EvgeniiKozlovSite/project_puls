@@ -100,6 +100,27 @@
         }
         
     }
+    .carousel{
+        &__inner{
+            max-width: 430px;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+            .slick-prev , .slick-next{
+                img{
+                    width: 25px;
+                    height: 43px;
+                }            
+            }
+            
+        }
+    }
+    .catalog-item{
+        &__footer{
+            justify-content: space-around;
+        }
+    }
 
 }
 /* @media(max-width: 575px){
@@ -247,4 +268,20 @@
             }
         }
     }
+    .carousel{
+        padding-bottom: 20px;
+    }
+    .catalog{
+        &__tab{
+            font-size: 12px;
+        }
+        h2{
+            font-size: 20px;
+        }  
+    }
+    .title{
+        font-size: 18px;
+    }
+    
+    
 }

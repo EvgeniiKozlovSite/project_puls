@@ -1,0 +1,23 @@
+.pageup{
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    color: $color_button;
+    text-decoration: none;
+    img{
+        bottom: 80px;
+        animation-name: topup;
+        animation-duration: 2s;
+        animation-timing-function: ease, step-start, cubic-bezier(0.1, 0.7, 1.0, 0.1);
+        animation-iteration-count: infinite;
+        &:hover{
+            animation-play-state: paused;
+        }
+
+        
+    }  
+    
+}
