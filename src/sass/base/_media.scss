@@ -1,4 +1,4 @@
-@media(max-width: 991px){
+@media(max-width: 992px){
     .container{
         width: 720px;
     }
@@ -35,9 +35,25 @@
         }
             
     }
+    .carousel{
+        &__inner{
+            max-width: 600px;
+        }
+    }
+    .catalog{
+        &__content{
+            justify-content: space-around;
+        }
+    }
+    .footer{
+        &__info{
+            width: 400px;
+            padding-bottom: 30px;
+        }
+    }
 }
 
-@media(max-width: 767px){
+@media(max-width: 768px){
     .container{
         width: 540px;
     }
@@ -167,7 +183,7 @@
         }
     }
 } */
-@media(max-width: 575px){
+@media(max-width: 576px){
     .container{
         width: 350px;
     }
@@ -270,6 +286,9 @@
     }
     .carousel{
         padding-bottom: 20px;
+        &__inner{
+            max-width: 260px;
+        }
     }
     .catalog{
         &__tab{
@@ -282,6 +301,63 @@
     .title{
         font-size: 18px;
     }
+    .comments{
+        &__comment{
+            display: block;
+            img{
+                float: left;
+                margin: 4px 10px 2px 0px;
+            }
+        }
+    }
+    .footer{
+        &__addr{
+            margin-top: 10px;
+        }
+        &__phone, &__social{
+            margin-top: 16px;
+        }
+    }
+    .modal{
+        &__close{
+            top: 0;
+            right: 20px;
+        }
+    }
     
     
+}
+@media (max-width: 320px){
+    .container{
+        width: 100%;
+        padding: 0 5px;
+    }
+    .promo{
+        &__icons{
+            width: 300px;
+        }
+    }
+    #consultation-form{
+        width: 300px;
+    }
+    .carousel{
+        display: none;
+    }
+    .footer{
+        &__info{
+            width: 300px;
+        }
+    }
+    .catalog{
+        &__tabs{
+            flex-wrap: wrap;
+            height: 160px;
+        }
+        &__tab{
+            transform: none;
+            div{
+                transform: none;
+            }
+        }
+    }
 }
